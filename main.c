@@ -24,15 +24,12 @@ nt main(int argc, char *argv[]) {
 /*Lab03*/
 int main(){
 	int i;
-	int grade[5];
-	int score[5];
+	int a[5] = {1,2,3,4,5};
+	int b[5] = {1,2,3,4,6};
 	
 	for(i=0;i<5;i++){
-		grade[i] = rand()%100;
-		score[i] = grade[i];
+		if (a[i]!=b[i])
+		printf("index %d is differnet\n", i);
 	}
-	for(i=0;i<5;i++)
-		printf("score[%d] = %d\n", i, score[i]);
-		
 	return 0;
 }
